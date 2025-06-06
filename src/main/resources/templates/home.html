@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Home</title>
+      <style>
+          .container {
+              max-width: 800px;
+              margin: 10px auto;
+              padding: 20px;
+              font-family: Arial, sans-serif;
+              background-color: #f4f4f4;
+              border-radius: 8px;
+              box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+          }
+      </style>
+    </head>
+    <body>
+
+      <div class="container">
+          <h1 data-th-text="${name}">Welcome to Home page</h1>
+          <p>My current designation is: <span th:text ='${designation}'></span></p>
+          <p>Abhishek <span data-th-text="${id}"></span></p>
+          <a data-th-href ="${github}" >Click here to open</a>
+      </div>   
+
+    </body>
+</html>
